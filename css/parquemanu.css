@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #f1dda5;
+}
+/* el div que empieza desde el main hasta antes de recomendaciones*/
+#fondo{
+    width: 100%;
+    height: 800px;
+    background-image: url("../imagenes/manuriver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo-nav{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+     justify-content: end;
+}
+/* <logo> */
+    .logoHeader{
+        display: block;
+        padding: 5px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 200px;
+    }
+    .logoHeader img{
+        width: 100%;
+    }
+/* <logo> */
+
+/* <nav> */
+.nav-section{
+    margin: auto;
+    width: 80%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+
+}
+
+ul, ol{
+    list-style: none;
+}
+.nav-partido{
+    display: flex;
+}
+.nav-partido li a{
+   background-color:rgb(27, 53, 17);
+   border: 1px solid rgb(197, 147, 54) ;
+   border-radius: 15px;
+   color:white;
+   text-decoration: none;
+   padding: 10px 50px;
+    display: block;
+}
+.nav-partido li a:hover{
+    background-color:rgb(207, 128, 0);
+}
+.nav-partido>li {
+    float: left;
+}
+.nav-partido li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav-partido li:hover>ul{
+    display: block;
+}
+
+/* </nav> */
+
+    main{
+        display: flex;
+
+
+    }
+    /* primer contenedor del titulo y el parrafo*/
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+
+
+  .h1{
+        font-size: 40pt;
+        margin: 20px;
+        font-family: 'Arial Narrow Bold';
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: rgb(235, 229, 228);
+    }
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.div-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+    .p{
+        width: 80%;
+        margin: 20px 10px;
+        padding: 10px;
+        background-color: papayawhip ;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        float: right;
+        font-family:  Arial;
+        border-radius: 5px;
+        font-size: 14pt;
+        
+       
+    }
+    .p1{
+        width: 80%;
+        margin: 20px 10px;
+        padding: 10px;
+        background-color: papayawhip ;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        float: left;
+        font-family:  Arial;
+        border-radius: 5px;
+        font-size: 14pt;
+       
+    }
+
+
+
+    .contenedor3{
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenedor4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: gainsboro;
+        margin: 10px 20px 10px 20px; 
+        font-size: 15pt;
+        font-family: 'Franklin Gothic Medium';
+        border: 2px solid black;
+    }
+
+    .img1{
+        width: 350px;
+        height: 200px;
+    }
+
+
+
+/*recomendaciones*/
+
+.recomen{
+    display: flex;
+    flex-direction: column;
+}
+ .img{
+    width: 100%;
+    height: 350px;
+ }
+
+.h3{
+    margin: 10px 0px;
+    display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+/*seccion de aside*/
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+    /* <footer> */
+    footer{
+        margin-bottom: 0px;
+        margin-top: auto;
+        background: #202020;
+        color: white;
+        width: 100%;
+    }
+    footer section{
+        display: flex;
+        margin-right: 10px;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .box-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .box-footer p{
+        margin: 0px;
+    }
+    .box-footer a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #7a7a7a;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .box-footer a:hover{
+        opacity: 0.8;
+    }
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .nominaciones{
+        display: flex;
+        width: 50px;
+    }
+    .nominaciones img{
+        width: 100%;
+    }
+    .icono{
+        display: flex;
+        height: 40px;
+    }
+    .icono p{
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .icono img{
+        width: 40px;
+    }
+    .logo{
+        width: 100px;
+        margin: 10px;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .box-copyright{
+        color: #7a7a7a;
+        text-align: center;
+    }
+    .box-copyright hr{
+        margin: 0px 0px 0px 30px;
+        border: 1px solid gray;
+        justify-content: center;
+        width: 95%;
+    }
+/* </footer> */
+

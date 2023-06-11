@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Registro.css">
+        <title>Registro</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <article class="logo-nav">
+                    <div class="logoHeader">
+                        <img src="./imagenes/Logo Live TravelPERU.png" alt="Imagen no encontrada">    
+                    </div>
+                    
+                    <div class="nav-section">
+                        <ul class="nav-partido" >
+                            <li><a href="./index.html">Home</a></li>
+                           <li><a>Destinos</a>
+                                <ul>
+                                    <li><a href="./Huacapullana.html">Huaca Pucllana</a></li>
+                                    <li> <a href="">Cristo del Pacífico</a></li>
+                                    <li> <a href="">Machu Picchu</a></li>
+                                    <li> <a href="">Montaña de los 7 colores</a></li>
+                                    <li> <a href="">Kuélap</a></li>
+                                    <li> <a href="">Parque Nacional del Manu</a></li>      
+                                </ul>
+                            </li>
+                            <li><a href="./Conocenos.html">Conócenos</a></li>
+                            <li><a href="./Registro.html">Registrate</a></li>
+                        </ul>    
+                          
+                    </div>
+                </article>
+            </section> 
+        </header>
+        <hr> 
+        <main>  
+            <section id="registro">
+                <form class="registro" name="frmlogueo" onsubmit="cargar(this)" method="post">
+
+                    <h1>Ingresa tus datos :</h1>
+                    <div id="formulario">
+                        <div id="usuario" class="texto">
+                            <h4>Usuario: </h4>
+                            <input type="text" placeholder="Usuario">
+                        </div>  
+                        <div id="clave">
+                            <h4>Clave: </h4>
+                            <div id="clave-input">
+                                <input type="password" placeholder="Clave">
+                                <input type="password" placeholder="Confirmar clave">
+                            </div>
+                        </div>      
+                        <div id="gmail" class="texto">
+                            <h4>Gmail: </h4>
+                            <input type="email" placeholder="Correo Electronico">
+                        </div>
+                        <div id="destinos">
+                            <h4>Destino: </h4>
+                            <div id="destinos-imput"> 
+                                <input type="checkbox">Huaca Pucllana
+                                <br>
+                                <input type="checkbox">Cristo del Pasifico
+                                <br>
+                                <input type="checkbox">Machu Picchu
+                                <br>
+                                <input type="checkbox">Montaña de los 7 colores
+                                <br>
+                                <input type="checkbox">Kuelap
+                                <br>
+                                <input type="checkbox">Parque Nacional de Manu
+                            </div>
+                        </div>
+                        <div class="fecha">
+                            <h4>Fecha de inicio: </h4>
+                            <input type="date">
+                        </div>
+                        <div class="fecha">
+                            <h4>Fecha final: </h4>
+                            <input type="date">
+                        </div>
+                        
+                        <div id="input-button" >
+                            <input type="button" value="REGISTARSE">
+                        </div> 
+                    </div>
+                </form>
+            </section>
+            <section>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <section>
+                <article class="box-footer">
+                    <div class="logo">
+                        <img src="./imagenes/Logo Live Travel blanco.png" alt="Imagen no encontrada">
+                    </div> 
+                </article>
+                <article class="redes-sociales">
+                    <h2>Redes Sociales</h2>
+                    <div class="icono">
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <img data-ar="facebook" src="./imagenes/facebook.png" alt="Imagen no encontrada">
+                    </a>
+                        <p>Siguenos en Facebook</p>
+                    </div>
+                    <div class="icono">
+                        <a href="https://www.instagram.com/" target="_blank">
+                        <img data-ar="instagram" src="./imagenes/instagram.png" alt="Imagen no encontrada">
+                    </a>
+                        <p>Siguenos en Instagram</p>
+                    </div>
+                    <div class="icono">
+                        <a href="https://twitter.com/" target="_blank">
+                      <img data-ar="twitter" src="./imagenes/twitter.png" alt="Imagen no encontrada">
+                    </a>
+                        <p>Siguenos en Twitter</p>
+                    </div>
+                </article>
+                <article class="box-footer">
+                    <h2>Enlaces de Interés</h2>
+                        <a href="https://www.gob.pe/mincetur">Ministerio de comercio Exterior y Turismo</a>
+                        <a href="https://www.gob.pe/migraciones">Migraciones</a>
+                        <a href="https://www.gob.pe/promperu">PROMPERÜ</a>
+                </article>
+                <article class="box-footer">
+                    <h2>Enlaces de Interés</h2>
+                    <p>Av.Uruguay 514, Lima 15001</p><br>
+                    <p>(01)6555633</p>
+                </article>
+                <article class="box-footer">
+                    <h2>Nominaciones</h2>
+                    <div class="nominaciones">
+                        <img src="./imagenes/world travel awards.png" alt="">
+                        <img src="./imagenes/world travel awards.png" alt="">
+                        <img src="./imagenes/world travel awards.png" alt="">
+                    </div>
+                </article>  
+            </section> 
+            <div class="box-copyright">
+                <hr>
+                <p>© 2023 Todos los Derechos Reservados |
+                <b>Cibertec</b> </p>
+            </div>             
+        </footer>
+    </body>
+</html>
