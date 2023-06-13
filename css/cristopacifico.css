@@ -234,83 +234,82 @@ aside{
 }
 
 
-    /* <footer> */
-    footer{
-        margin-bottom: 0px;
-        margin-top: auto;
-        background: #202020;
-        color: white;
-        width: 100%;
-    }
-    footer section{
-        display: flex;
-        margin-right: 10px;
-        justify-content: center;
-        justify-content: space-between;
-    }
-    .box-footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-    .box-footer p{
-        margin: 0px;
-    }
-    .box-footer a{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        color: white;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    .box-footer a:hover{
-        opacity: 0.8;
-    }
-    .redes-sociales{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-    .nominaciones{
-        display: flex;
-        width: 50px;
-    }
-    .nominaciones img{
-        width: 100%;
-    }
-    .icono{
-        display: flex;
-        height: 40px;
-    }
-    .icono p{
-        margin: 0px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    .icono img{
-        width: 40px;
-    }
-    .logo{
-        width: 100px;
-        margin: 10px;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: auto;
-    }
-    .logo img{
-        width: 100%;
-    }
-    .box-copyright{
-        color: #7a7a7a;
-        text-align: center;
-    }
-    .box-copyright hr{
-        margin: 0px 0px 0px 30px;
-        border: 1px solid gray;
-        justify-content: center;
-        width: 95%;
-    }
+/* <footer> */
+footer{
+    margin-bottom: 0px;
+    margin-top: auto;
+    background: #202020;
+    color: white;
+    width: 100%;
+}
+footer section{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    justify-content: space-between;
+}
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+.box-footer p{
+    margin: 0px;
+}
+.box-footer a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box-footer a:hover{
+    opacity: 0.8;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+.nominaciones{
+    display: flex;
+    width: 50px;
+}
+.nominaciones img{
+    width: 100%;
+}
+.icono{
+    display: flex;
+    height: 40px;
+}
+.icono p{
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.icono img{
+    width: 40px;
+}
+.logo{
+    width: 100px;
+    margin: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+.logo img{
+    width: 100%;
+}
+.box-copyright{
+    color: #7a7a7a;
+    text-align: center;
+}
+.box-copyright hr{
+    margin: 0px 0px 0px 30px;
+    border: 1px solid gray;
+    justify-content: center;
+    width: 95%;
+}
 /* </footer> */
-

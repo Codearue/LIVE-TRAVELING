@@ -81,6 +81,75 @@ header{
 /* </nav> */
 /* </header> */
 
+/* <main> */
+h1#titulo {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  h2.subtitulo {
+    font-size: 32px;
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  h2.nombre {
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  /* Contenedor */
+  
+  .contenedorNosotros {
+    display: flex;
+    justify-content: space-around;
+    margin: 72px 0;
+  }
+  
+  .contenedorNosotros picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imágenes */
+  
+  .imgRounded {
+    width: 220px;
+    height: 220px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  
+  /* Descripción */
+  
+  .descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 60px auto;
+  }
+  
+  .descripcion p {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size:20px;
+  }
+  
+  /* Contenedor - historia */
+  
+  .contprofesionales {
+   margin: 10%;
+   margin-top: 05%;
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+  }
+  
+ 
+/* </main> */
+
 /* <footer> */
 footer{
     margin-bottom: 0px;
@@ -160,72 +229,3 @@ footer section{
     width: 95%;
 }
 /* </footer> */
-
-/* <main> */
-h1#titulo {
-    text-align: center;
-    margin: 50px 0;
-  }
-  
-  h2.subtitulo {
-    font-size: 32px;
-    text-align: center;
-    margin: 50px 0;
-  }
-  
-  h2.nombre {
-    font-weight: normal;
-    text-align: center;
-  }
-  
-  /* Contenedor */
-  
-  .contenedorNosotros {
-    display: flex;
-    justify-content: space-around;
-    margin: 72px 0;
-  }
-  
-  .contenedorNosotros picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Imágenes */
-  
-  .imgRounded {
-    width: 220px;
-    height: 220px;
-    border-radius: 10%;
-    object-fit: cover;
-  }
-  
-  /* Descripción */
-  
-  .descripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
-    margin: 60px auto;
-  }
-  
-  .descripcion p {
-    text-align: center;
-    margin: 0 0 20px 0;
-    font-size:20px;
-  }
-  
-  /* Contenedor - historia */
-  
-  .contprofesionales {
-   margin: 10%;
-   margin-top: 05%;
-   font-size: 18px;
-   font-family: Arial, Helvetica, sans-serif;
-   text-align: center;
-  }
-  
- 
-/* </main> */
