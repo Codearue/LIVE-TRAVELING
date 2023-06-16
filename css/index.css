@@ -1,6 +1,5 @@
 body{
     background-color: rgb(209, 162, 162);
-    padding: 5px;
 }
 ul, ol{
     list-style: none;
@@ -12,30 +11,32 @@ ul, ol{
 /* <header> */
     header{
         width: 100%;
+        height: 600px;
         background-image: url("../imagenes/index/fondoindex.jpg");
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     #section-logo-nav{
         height: auto;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
     /* <logo> */
         .logoHeader{
-            width: 200px;
+            width: 15%;
             height: auto;
-            max-height: 50%;
-            padding-left: 50px;
-            padding-top: 50px;
+            margin-left: 50px;
+            margin-top: 35px;
         }
         .logoHeader img{
             width: 100%;
             height: 100%;
-            
         }
     /* </logo> */
 
@@ -77,40 +78,51 @@ ul, ol{
         }
     /* </nav> */
 
-    #section-aside{
-        display: flex;
-        justify-content: right;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        padding-right: 40px;
-    }
-    #calendario{
-        background-color: rgb(249, 131, 131);
-        border-radius: 30px;
-        height: 220px;
-        width: 290px;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-    }
+    /* <aside> */
+        #section-aside{
+            display: flex;
+            justify-content: right;
+            padding-bottom: 50px;
+            padding-right: 60px;
+        }
+        #calendario{
+            background-color: rgb(249, 131, 131);
+            border-radius: 20px;
+            height: auto;
+            width: auto;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #calendario h1{
+            margin-bottom: 18px;
+            font-size: 20px;
+        }
+    /* </aside> */
+
 /* </header> */
 
 /* <main> */
     main{
         height: auto;
+        padding-bottom: 30px;
     }
     #carrucel img{
         width: 100%;
-        height: 400px;
+        height: 500px;
         display: block;
         align-items: center;
         background-size: cover;
     }
-    .titulo{
-        margin: 40px 0px;
+    .titulo{ 
         background-color: rgba(159, 62, 61, 0.677);
-        padding: 10px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
     }
     #section-destinos{
         display: flex; 
@@ -120,19 +132,24 @@ ul, ol{
     .articulo-destino{ 
         background-color: antiquewhite;
         border-radius: 15px;
-        padding-left: 10px; 
-        padding-right: 10px; 
-        text-align: center; 
-        width: 30%; /* Añadido */
+        padding: 20px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: justify;
+        width: 28%; 
     }
     .articulo-destino h3{
         text-align: center;
+        margin: 10px;
+        font-size: 28px;
     }
     .articulo-destino img{ 
-        width: 250px; 
-        height: 150px; 
+        width: auto; 
+        height: 180px; 
         object-fit: cover;
-        margin: 15px;
+        margin-bottom: 15px;
     }
 /* </main> */
 
@@ -218,12 +235,69 @@ ul, ol{
 /* </footer> */
 
 
-/* <vercion cambiada> */
-@media (max-width: 1030px) {
-  
+/* <vercion-modificada> */
+@media (max-width: 915px) {
 
+    #section-logo-nav{
+        flex-direction: column;
+    }
+    .logoHeader{
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #nav-section{      
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;    
+        margin-right: 0px;
+    }
+    #nav-ul{
+        width: 100%;
+        justify-content: center;
+    }
+    #nav-ul li a{
+        padding: 10px 35px;
+    }
 }
-@media (min-width: 1030px) {
-  
+@media (min-width: 915px) and (max-width: 999px) {
 
+    #section-logo-nav{
+        flex-direction: row;
+    }
+    .logoHeader{
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #nav-section{
+        width: calc(100% - 200px);
+        margin-top: 50px;    
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+    #nav-ul li a{
+        padding: 10px 50px;
+    }
+}
+/* <vercion-inicial> */
+@media (min-width: 999px) {
+
+    #section-logo-nav{
+        flex-direction: row;
+    }
+    .logoHeader{
+        width: 15%;
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+    #nav-section{
+        width: calc(100% - 200px);
+        margin-top: 50px;    
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+    #nav-ul li a{
+        padding: 10px 50px;
+    }
 }

@@ -25,11 +25,10 @@ body{
     }
     /* <logo> */
         .logoHeader{
-            width: 200px;
+            width: 15%;
             height: auto;
-            max-height: 50%;
-            padding-left: 50px;
-            padding-top: 50px;
+            margin-left: 50px;
+            margin-top: 35px;
         }
         .logoHeader img{
             width: 100%;
@@ -273,3 +272,69 @@ body{
     }
 /* </footer> */
 
+/* <vercion-modificada> */
+@media (max-width: 915px) {
+
+    #section-logo-nav{
+        flex-direction: column;
+    }
+    .logoHeader{
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #nav-section{      
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;    
+        margin-right: 0px;
+    }
+    #nav-ul{
+        width: 100%;
+        justify-content: center;
+    }
+    #nav-ul li a{
+        padding: 10px 35px;
+    }
+}
+@media (min-width: 915px) and (max-width: 999px) {
+
+    #section-logo-nav{
+        flex-direction: row;
+    }
+    .logoHeader{
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #nav-section{
+        width: calc(100% - 200px);
+        margin-top: 50px;    
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+    #nav-ul li a{
+        padding: 10px 50px;
+    }
+}
+/* <vercion-inicial> */
+@media (min-width: 999px) {
+
+    #section-logo-nav{
+        flex-direction: row;
+    }
+    .logoHeader{
+        width: 15%;
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+    #nav-section{
+        width: calc(100% - 200px);
+        margin-top: 50px;    
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+    #nav-ul li a{
+        padding: 10px 50px;
+    }
+}
