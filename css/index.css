@@ -41,7 +41,6 @@ ul, ol{
             justify-content: flex-end;
             font-family:'Times New Roman', Times, serif;
             font-size: 25px;
-            display: flex; 
         }
         #nav-ul li {
             float: left;
@@ -53,6 +52,7 @@ ul, ol{
             display: none;
             position: absolute;
             min-width: 140px;
+            list-style: none;
         }
         #nav-ul li a{
             background-color:rgb(197, 147, 54);
@@ -94,9 +94,6 @@ ul, ol{
         justify-content: center;
         background-size: cover;
         background-repeat: no-repeat;
-    }
-    section{
-        height: 300px;
     }
     #section-articulos{
         display: flex; 

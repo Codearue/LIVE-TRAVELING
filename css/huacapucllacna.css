@@ -48,7 +48,6 @@ body{
             display: flex;
             justify-content: end;
             padding-right: 50px;
-
         }
         #nav-ul{
             display: flex;
@@ -113,7 +112,6 @@ body{
         border-radius: 5px;
         font-size: 12pt;
     }
-
     #articulo-2{
         display: flex;
         flex-direction: row;
@@ -140,14 +138,15 @@ body{
 /* <main> */
     main{
         display: flex;
+        flex-direction: column;
+
     }
     #section-paquetes{
-        width: 80%;
+        width: 100%;
         padding-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 07%;
     }
     .articulo-paquete{
         display: flex;
@@ -178,7 +177,6 @@ body{
             width: 100%;
             height: 100%;
         }
-
         .h3{
             margin: 10px 0px;
             display: flex;
