@@ -8,7 +8,7 @@ function aumentarTexto(e) {
     e.style.fontSize = "14px";
   }
   
-  for (element of document.getElementsByClassName("pblok")) {
+  for (element of document.getElementsByClassName("articulo-texto")) {
     element.setAttribute("onmouseover", "aumentarTexto(this)");
     element.setAttribute("onmouseout", "reducirTexto(this)");
   }
@@ -31,29 +31,29 @@ function volverImagenOriginal(img, imagenOriginal) {
 
 
 img1.addEventListener("mouseover", function() {
-  cambiarImagen(img1, "imagenes/Huacapucllana/paqueteA2.jpg");
+  cambiarImagen(img1, "../imagenes/Huacapucllana/paqueteA2.jpg");
 });
 
 img1.addEventListener("mouseout", function() {
-  volverImagenOriginal(img1, "imagenes/Huacapucllana/paqueteA1.jpg");
+  volverImagenOriginal(img1, "../imagenes/Huacapucllana/paqueteA1.jpg");
 });
 
 
 img2.addEventListener("mouseover", function() {
-  cambiarImagen(img2, "imagenes/Huacapucllana/paqueteB2.jpg");
+  cambiarImagen(img2, "../imagenes/Huacapucllana/paqueteB2.jpg");
 });
 
 img2.addEventListener("mouseout", function() {
-  volverImagenOriginal(img2, "imagenes/Huacapucllana/paqueteB1.jpg");
+  volverImagenOriginal(img2, "../imagenes/Huacapucllana/paqueteB1.jpg");
 });
 
 
 img3.addEventListener("mouseover", function() {
-  cambiarImagen(img3, "imagenes/Huacapucllana/paqueteC2.jpg");
+  cambiarImagen(img3, "../imagenes/Huacapucllana/paqueteC2.jpg");
 });
 
 img3.addEventListener("mouseout", function() {
-  volverImagenOriginal(img3, "imagenes/Huacapucllana/paqueteC1.jpg");
+  volverImagenOriginal(img3, "../imagenes/Huacapucllana/paqueteC1.jpg");
 });
   
   
