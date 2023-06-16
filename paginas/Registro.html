@@ -9,34 +9,33 @@
     </head>
     <body>
         <header>
-            <nav class="logo-nav">
-                    <div class="logoHeader">
-                        <img src="../imagenes/globales/Logo Live TravelPERU.jpg" alt="Imagen no encontrada">    
-                    </div>     
-                    <div class="nav-section">
-                        <ul class="nav-partido" >
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="">Destinos</a>
-                            <ul>
-                                <li><a href="../paginas/Huacapullana.html">Huaca Pucllana</a></li>
-                                <li> <a href="../paginas/CristoPacifico.html">Cristo del Pacífico</a></li>
-                                <li> <a href="../paginas/Machupichu.html">Machu Picchu</a></li>
-                                <li> <a href="../paginas/Montaña7col.html">Montaña de los 7 colores</a></li>
-                                <li> <a href="../paginas/Kuelap.html">Kuélap</a></li>
-                                <li> <a href="../paginas/ParqueNacionalManu.html">Parque Nacional del Manu</a></li>      
-                            </ul>
-                        </li>
-                        <li><a href="../paginas/Conocenos.html">Conócenos</a></li>
-                        <li><a href="./Registro.html">Registrate</a></li>
-                        </ul>       
-                    </div>
+            <section id="section-logo-nav">
+                <div class="logoHeader">
+                    <img src="../imagenes/globales/Logo Live TravelPERU.jpg" alt="Imagen no encontrada">    
+                </div>     
+                <nav id="nav-section">
+                    <ul id="nav-ul" >
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="">Destinos</a>
+                        <ul>
+                            <li><a href="../paginas/Huacapullana.html">Huaca Pucllana</a></li>
+                            <li> <a href="../paginas/CristoPacifico.html">Cristo del Pacífico</a></li>
+                            <li> <a href="../paginas/Machupichu.html">Machu Picchu</a></li>
+                            <li> <a href="../paginas/Montaña7col.html">Montaña de los 7 colores</a></li>
+                            <li> <a href="../paginas/Kuelap.html">Kuélap</a></li>
+                            <li> <a href="../paginas/ParqueNacionalManu.html">Parque Nacional del Manu</a></li>      
+                        </ul>
+                    </li>
+                    <li><a href="../paginas/Conocenos.html">Conócenos</a></li>
+                    <li><a href="./Registro.html">Registrate</a></li>
+                    </ul>       
                 </nav> 
+            </section>
         </header>
         <hr> 
         <main>  
             <section id="registro">
                 <form class="registro" name="frmlogueo" onsubmit="cargar(this)" method="post">
-
                     <h1>Ingresa tus datos :</h1>
                     <div id="formulario">
                         <div id="usuario" class="texto">
@@ -77,8 +76,7 @@
                         <div class="fecha">
                             <h4>Fecha final: </h4>
                             <input type="date">
-                        </div>
-                        
+                        </div>   
                         <div id="input-button">
                             <input type="button" value="REGISTARSE">
                         </div> 

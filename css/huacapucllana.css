@@ -9,78 +9,72 @@ body{
 }
 
 /* <header> */
-header{
-    width: 100%;
-    background-image: url("../imagenes/Huacapucllana/huaca-pullacna.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#section-logo-nav{
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-     justify-content: end;
-}
-/* <logo> */
-    #img-logo{
-        display: block;
-        padding: 5px;
-        margin-left: 30px;
-        margin-top: 10px;
-        margin-right: auto;
-        margin-bottom: auto;
-        width: 200px;
-    }
-    #img-logo img{
+    header{
         width: 100%;
+        height: auto;
+        background-image: url("../imagenes/Huacapucllana/huaca-pullacna.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-/* <logo> */
-
-/* <nav> */
-#nav-section{
-    margin: auto;
-    width: 80%;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 25px;
-    display: flex;
-    justify-content: end;
-    padding-right: 50px;
-}
-#nav-ul{
-    display: flex;
-}
-#nav-ul li a{
-   background-color:rgba(197, 147, 54, 0.819);
-   border: 1px solid rgba(197, 147, 54, 0.819) ;
-   border-radius: 15px;
-   color:white;
-   text-decoration: none;
-   padding: 10px 50px;
-    display: block;
-}
-#nav-ul li a:hover{
-    background-color:rgba(151, 102, 22, 0.73);
-}
-#nav-ul>li {
-    float: left;
-}
-#nav-ul li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-#nav-ul li:hover>ul{
-    display: block;
-}
-/* </nav> */
-
-
-    main{
+    #section-logo-nav{
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
     }
+    /* <logo> */
+        .logoHeader{
+            width: 200px;
+            height: auto;
+            max-height: 50%;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        .logoHeader img{
+            width: 100%;
+            height: 100%;
+        }
+    /* <logo> */
+
+    /* <nav> */
+        #nav-section{
+            width: calc(100% - 200px);
+            margin-top: 50px;    
+            margin-right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+        #nav-ul{
+            display: flex;
+        }
+        #nav-ul li a{
+        background-color:rgba(197, 147, 54, 0.819);
+        border: 1px solid rgba(197, 147, 54, 0.819) ;
+        border-radius: 15px;
+        color:white;
+        text-decoration: none;
+        padding: 10px 50px;
+            display: block;
+        }
+        #nav-ul li a:hover{
+            background-color:rgba(151, 102, 22, 0.73);
+        }
+        #nav-ul>li {
+            float: left;
+        }
+        #nav-ul li ul{
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+        #nav-ul li:hover>ul{
+            display: block;
+        }
+    /* </nav> */
+
     #section-descripcion{
         display: flex;
         flex-direction: column;
@@ -137,10 +131,14 @@ header{
         border-radius: 5px;
         font-size: 12pt;
     }
+/* </header> */
 
 
-
-
+/* <main> */
+    main{
+        display: flex;
+        flex-direction: column;
+    }
     #section-paquetes{
         width: 80%;
         padding-top: 20px;
@@ -164,7 +162,6 @@ header{
         padding: 6px;
         color: rgb(176, 123, 48);
         margin-top: 20px;
-    
     }
     .articulo-paquete p{
         margin-bottom: 20px;
@@ -175,30 +172,28 @@ header{
         width: 350px;
         height: 200px;
     }
+    #section-recomendaciones{
+        display: flex;
+        flex-direction: column;
+    }
+    #section-recomendaciones img{
+        width: 100%;
+        height: auto;
+    }
+    .h3{
+        margin: 40px 0px;
+        background-color: rgba(159, 107, 61, 0.677);
+        padding: 10px;
+    }
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+/* </main> */
 
 
-#section-recomendaciones{
-    display: flex;
-    flex-direction: column;
-}
-#section-recomendaciones img{
-    width: 100%;
-    height: auto;
-}
-.h3{
-    margin: 40px 0px;
-    background-color: rgba(159, 107, 61, 0.677);
-    padding: 10px;
-}
-
-aside{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-    /* <footer> */
+/* <footer> */
     footer{
         margin-bottom: 0px;
         margin-top: auto;

@@ -1,108 +1,89 @@
 *{
     margin: 0px;
 }
-
-body{
-    background-color: rgb(153, 189, 221);
-}
-/* el div que empieza desde el main hasta antes de recomendaciones*/
-#fondo{
-    width: 100%;
-    background-image: url("../imagenes/CristodelPacifico/cristopacifico.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-header{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.logo-nav{
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-     justify-content: end;
-}
-/* <logo> */
-    .logoHeader{
-        display: block;
-        padding: 5px;
-        margin-left: 30px;
-        margin-top: 10px;
-        margin-right: auto;
-        margin-bottom: auto;
-        width: 200px;
-    }
-    .logoHeader img{
-        width: 100%;
-    }
-/* <logo> */
-
-/* <nav> */
-.nav-section{
-    margin: auto;
-    width: 80%;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 25px;
-    display: flex;
-    justify-content: end;
-    padding-right: 50px;
-
-}
-
 ul, ol{
     list-style: none;
 }
-.nav-partido{
-    display: flex;
-}
-.nav-partido li a{
-    background-color:rgba(74, 164, 141, 0.861);
-   border: 1px solid rgba(74, 164, 141, 0.861);
-   border-radius: 15px;
-   color:white;
-   text-decoration: none;
-   padding: 10px 50px;
-    display: block;
-}
-.nav-partido li a:hover{
-    background-color:rgba(67, 117, 151, 0.45);
-}
-.nav-partido>li {
-    float: left;
-}
-.nav-partido li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-.nav-partido li:hover>ul{
-    display: block;
+body{
+    background-color: rgb(153, 189, 221);
 }
 
-/* </nav> */
-
-
-    main{
-        display: flex;
-
+/* <header> */
+    header{
+        width: 100%;
+        background-image: url("../imagenes/CristodelPacifico/cristopacifico.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
 
     }
-    /* primer contenedor del titulo y el parrafo*/
+    #section-logo-nav{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    /* <logo> */
+        .logoHeader{
+            width: 200px;
+            height: auto;
+            max-height: 50%;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        .logoHeader img{
+            width: 100%;
+            height: 100%;
 
-    .section{
+        }
+    /* <logo> */
+
+    /* <nav> */
+        #nav-section{
+             width: calc(100% - 200px);
+            margin-top: 50px;    
+            margin-right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+        #nav-ul{
+            display: flex;
+        }
+        #nav-ul li a{
+            background-color:rgba(74, 164, 141, 0.861);
+            border: 1px solid rgba(74, 164, 141, 0.861);
+            border-radius: 15px;
+            color:white;
+            text-decoration: none;
+            padding: 10px 50px;
+            display: block;
+        }
+        #nav-ul li a:hover{
+            background-color:rgba(67, 117, 151, 0.45);
+        }
+        #nav-ul>li {
+            float: left;
+        }
+        #nav-ul li ul{
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+        #nav-ul li:hover>ul{
+            display: block;
+        }
+    /* </nav> */
+
+    #section-descripcion{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 10px;
-
     }
-
-
-  .h1{
+    #section-descripcion h1{
         font-size: 40pt;
         margin: 20px;
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -111,33 +92,34 @@ ul, ol{
         justify-content: flex-start;
         color: black;
     }
-
-.contenedor1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    
-}
-
-.div-p{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contenedor2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    
-}
-
-    .p{
+    #articulo-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+    }
+    #articulo-1 p{
+        width: 80%;
+        margin: 20px 10px;
+        padding: 10px;
+        background-color: rgba(95, 214, 198, 0.516) ;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        float: right;
+        font-family:  Arial;
+        border-radius: 5px;
+        font-size: 14pt;       
+    }
+    #articulo-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px; 
+    }
+    #articulo-2 p{
         width: 80%;
         margin: 20px 10px;
         padding: 10px;
@@ -149,27 +131,16 @@ ul, ol{
         font-family:  Arial;
         border-radius: 5px;
         font-size: 14pt;
-        
-       
     }
-    .p1{
-        width: 80%;
-        margin: 20px 10px;
-        padding: 10px;
-        background-color: rgba(95, 214, 198, 0.516) ;
+/* </header> */
+
+
+/* <main> */
+    main{
         display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-        float: right;
-        font-family:  Arial;
-        border-radius: 5px;
-        font-size: 14pt;
-        
+        flex-direction: column;
     }
-
-
-
-    .contenedor3{
+    #section-paquetes{
         width: 80%;
         padding-top: 20px;
         display: flex;
@@ -177,8 +148,7 @@ ul, ol{
         justify-content: space-between;
         margin: 05%;
     }
-
-    .contenedor4{
+    .articulo-paquete{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -189,60 +159,49 @@ ul, ol{
         text-align: center;
         border: 4px solid rgb(40, 112, 118);
     }
-    .contenedor4 h3{
+    .articulo-paquete h3{
         padding: 6px;
         color: rgb(40, 112, 118);
         margin-top: 20px;
     
     }
   
-    .contenedor4 p{
+    .articulo-paquete p{
         margin-bottom: 20px;
         margin-left: 15px;
         margin-right: 15px;
     }
-
     .pblok {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         margin-left: 2px;
     }
-
-
-    .img1{
+    .articulo-paquete img{
         width: 350px;
         height: 200px;
     }
+    #section-recomendaciones{
+        display: flex;
+        flex-direction: column;
+    }
+    #section-recomendaciones img{
+        width: 100%;
+        height: 400px;
+    }
+    .h3{
+        margin: 40px 0px;
+        background-color: rgba(61, 146, 159, 0.677);
+        padding: 10px;
+    }
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+/* </main> */
 
 
-
-/*recomendaciones*/
-
-.recomen{
-    display: flex;
-    flex-direction: column;
-}
- .img{
-    width: 100%;
-   height: 400px;
- }
-
-.h3{
-    margin: 40px 0px;
-    background-color: rgba(61, 146, 159, 0.677);
-    padding: 10px;
-}
-
-/*seccion de aside*/
-aside{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-
-    /* <footer> */
+/* <footer> */
     footer{
         margin-bottom: 0px;
         margin-top: auto;

@@ -18,7 +18,7 @@ var meses=new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Juli
         for(let i=1; i<=ndias; i++){dias.push(i);}
     
         var tabla=document.createElement("table");
-        document.getElementById("rigth-bottom").appendChild(tabla);
+        document.getElementById("calendario").appendChild(tabla);
     
         var fila=document.createElement("tr");
         tabla.appendChild(fila);
