@@ -1,206 +1,241 @@
+body{
+    background-color: rgb(209, 162, 162);
+    display: flexbox;
+}
+* {
+    padding: 0px;;
+    margin: 0px;
+}
+#imagen1{
+    
+    background-image: url("../imagenes/index/fondoindex.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    height: 500px;
+}
+#top{
+    height: auto;
+    display: flex;
+}
+#bottom{
+    height: 50%;
+    display: flex;
+}
+.logoHeader{
+
+    width: 200px;
+    max-height: 50%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.logoHeader img{
+    width: 100%;
+    height: 100%;
+    
+}
+#rigth-top{
+
+    width: calc(100% - 200px);
+    margin-top: 50px;    
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.nav-section{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+}
+
 ul, ol{
     list-style: none;
 }
+.nav-partido{
+    display: flex;
+}
 
-/* <header> */
-    header{
-        background-image: url("../imagenes/Montaña-de-los-7-colores-Cusco.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-    }
-    #section-top{
-        height: auto;
-        display: flex;
-    }
-    #section-bottom{
-        height: 50%;
-        display: flex;
-    }
-    #img-logo{
-        width: 200px;
-        max-height: 50%;
-        transition: all 3s ease;
-        padding-left: 100px;
-        padding-top: 50px;
-    }
-    #img-logo:hover{
-        transform: rotateZ(360deg);
-    }
-    #img-logo img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    /* <nav> */
-        #nav-section{
-            width: calc(100% - 200px);
-            margin-top: 50px;    
-            margin-right: 20px;
-            display: flex;
-            justify-content: flex-end;
-            font-family:'Times New Roman', Times, serif;
-            font-size: 25px;
-        }
-        #nav-ul li {
-            float: left;
-        }
-        #nav-ul li:hover>ul{
-            display: block;
-        }
-        #nav-ul li ul{
-            display: none;
-            position: absolute;
-            min-width: 140px;
-            list-style: none;
-        }
-        #nav-ul li a{
-            background-color:rgb(197, 147, 54);
-            border: 1px solid rgb(197, 147, 54) ;
-            border-radius: 15px;
-            color:white;
-            text-decoration: none;
-            padding: 10px 50px;
-            display: block;
-        }
-        #nav-ul li a:hover{
-            background-color:rgb(151, 102, 22);
-        }
-    /* </nav> */
+.nav-partido li a{
+    background-color:rgba(197, 73, 54, 0.793);
+    border: 1px solid rgba(197, 73, 54, 0.793) ;
+   border-radius: 15px;
+   color:white;
+   text-decoration: none;
+   padding: 10px 50px;
+    display: block;
+}
+.nav-partido li a:hover{
+    background-color:rgba(175, 87, 87, 0.528);
+}
+.nav-partido>li {
+    float: left;
+}
+.nav-partido li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav-partido li:hover>ul{
+    display: block;
+}
 
-    #article-left-bottom{
-    /*esto hace que ocupe todo el espacio que  rigth-bottom deja disponible*/
-        flex-grow: 1;
-        height: 100%;
-    }
-    #aside-rigth-bottom{
-        margin-right: 10px;
-        background-color: white;
-        display: flex;
-        height: auto;
-        width: auto;
-        margin-bottom: 20px;
-    }
-/* </header> */
+/* </nav> */
 
-/* <main> */
-    #carrucel{
-        border: 2px solid black;
-        border-radius: 15px;
-        background-image: url("../imagenes/huaca-pullacna350pxheigth.jpg");
-        height: 350px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    #section-articulos{
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .articulo{ 
-        background-color: antiquewhite;
-        border-radius: 15px;
-        padding-left: 10px; 
-        padding-right: 10px; 
-        border: 1px solid black; 
-        text-align: center; 
-        width: 30%; /* Añadido */
-        }
-    .articulo h3{
-        text-align: center;
-    }
-    .articulo img{ 
-        width: 250px; 
-        height: 150px; 
-        object-fit: cover;
-    }
-/* <main> */
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 30em;
+}
 
+
+#rigth-bottom{
+    background-color: rgb(249, 131, 131);
+    border-radius: 30px;
+    height: 220px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#imagen2 img{
+    width: 100%;
+    display: block;
+    background-size: cover;
+}
+#imagen2 h1{
+    margin: 40px 0px;
+    background-color: rgba(159, 62, 61, 0.677);
+    padding: 10px;
+}
+
+.section{
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 620px;
+}
+.h2{
+    margin: 40px 0px;
+    background-color: rgba(159, 62, 61, 0.677);
+    padding: 10px;
+}
+#articulos{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+.art{ 
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    text-align: center; 
+    width: 30%; /* Añadido */
+
+    }
+
+.art h3{
+    text-align: center;
+}
+
+.art img{ 
+
+    width: 250px; 
+    height: 150px; 
+    object-fit: cover;
+    margin: 15px;
+}
+
+   
 /* <footer> */
-    footer{
-        margin-bottom: 0px;
-        margin-top: auto;
-        background: #202020;
-        color: white;
-        width: 100%;
-    }
-    footer section{
-        display: flex;
-        margin-right: 10px;
-        justify-content: center;
-        justify-content: space-between;
-    }
-    .box-footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-    .box-footer p{
-        margin: 0px;
-    }
-    .box-footer a{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        color: #ffffff;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    .box-footer a:hover{
-        opacity: 0.8;
-    }
-    .redes-sociales{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-    .nominaciones{
-        display: flex;
-        width: 50px;
-    }
-    .nominaciones img{
-        width: 100%;
-    }
-    .icono{
-        display: flex;
-        height: 40px;
-    }
-    .icono p{
-        margin: 0px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    .icono img{
-        width: 40px;
-    }
-    .logo{
-        width: 100px;
-        margin: 10px;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: auto;
-    }
-    .logo img{
-        width: 100%;
-    }
-    .box-copyright{
-        color: #7a7a7a;
-        text-align: center;
-    }
-    .box-copyright hr{
-        margin: 0px 0px 0px 30px;
-        border: 1px solid gray;
-        justify-content: center;
-        width: 95%;
-    }
+footer{
+    margin-bottom: 0px;
+    margin-top: auto;
+    background: #202020;
+    color: white;
+    width: 100%;
+}
+footer section{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    justify-content: space-between;
+}
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+.box-footer p{
+    margin: 0px;
+}
+.box-footer a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box-footer a:hover{
+    opacity: 0.8;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+.nominaciones{
+    display: flex;
+    width: 50px;
+}
+.nominaciones img{
+    width: 100%;
+}
+.icono{
+    display: flex;
+    height: 40px;
+}
+.icono p{
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.icono img{
+    width: 40px;
+}
+.logo{
+    width: 100px;
+    margin: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+.logo img{
+    width: 100%;
+}
+.box-copyright{
+    color: #7a7a7a;
+    text-align: center;
+}
+.box-copyright hr{
+    margin: 0px 0px 0px 30px;
+    border: 1px solid gray;
+    justify-content: center;
+    width: 95%;
+}
 /* </footer> */
 
 
-/*
+
 @media (max-width: 600px) {
     #imagen1{
         height: 500px;
@@ -240,12 +275,12 @@ ul, ol{
   }
   @media (max-width: 768px) {
     .art {
-      width: 45%; 
+      width: 45%; /* Modificado */
     }
   }
+  
   @media (max-width: 480px) {
     .art {
-      width: 100%; <!--Modificado--/>
+      width: 100%; /* Modificado */
     }
   }
-*/

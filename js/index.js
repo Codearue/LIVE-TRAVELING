@@ -4,18 +4,6 @@ var meses=new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Juli
 
 
 
-function parpadear(){
-    //agrupo instrucciones
-    let r=Math.floor(Math.random()*256);
-    let g=Math.floor(Math.random()*256);
-    let b=Math.floor(Math.random()*256);
-
-    document.getElementById("huaca").style.color="rgb("+r+","+g+","+b+")";
-}
-
-    //setInterval("parpadear()",1000);
-    setInterval(parpadear,1000);
-
 
     function calendario(){
         var fecha=new Date();
@@ -56,8 +44,9 @@ function parpadear(){
         var celdas= document.getElementsByTagName("td");
         for(var j=0; j<celdas.length;j++){
             if(dia == celdas[j].innerHTML){
-                celdas[j].style.backgroundColor = "#C58A3E";
-                celdas[j].style.border ="1px solid black";
+                celdas[j].style.backgroundColor = "#781f1f";
+                celdas[j].style.color = "white";
+                celdas[j].style.border ="2px solid white";
             }
         }
     }

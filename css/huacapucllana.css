@@ -2,95 +2,107 @@
     margin: 0px;
 }
 
-ul, ol{
-    list-style: none;
-}
-
 body{
     background-color: #f1dda5;
 }
+/* el div que empieza desde el main hasta antes de recomendaciones*/
+#fondo{
+    width: 100%;
+    background-image: url("../imagenes/Huacapucllana/huaca-pullacna.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-/* <header> */
-    header{
+
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo-nav{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+     justify-content: end;
+}
+/* <logo> */
+    .logoHeader{
+        display: block;
+        padding: 5px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 200px;
+    }
+    .logoHeader img{
         width: 100%;
-        background-image: url("../imagenes/huaca-pullacna.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-    #section-logo-nav{
+/* <logo> */
+
+/* <nav> */
+.nav-section{
+    margin: auto;
+    width: 80%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+
+}
+
+ul, ol{
+    list-style: none;
+}
+.nav-partido{
+    display: flex;
+}
+.nav-partido li a{
+   background-color:rgba(197, 147, 54, 0.819);
+   border: 1px solid rgba(197, 147, 54, 0.819) ;
+   border-radius: 15px;
+   color:white;
+   text-decoration: none;
+   padding: 10px 50px;
+    display: block;
+}
+.nav-partido li a:hover{
+    background-color:rgba(151, 102, 22, 0.73);
+}
+.nav-partido>li {
+    float: left;
+}
+.nav-partido li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav-partido li:hover>ul{
+    display: block;
+}
+
+/* </nav> */
+
+
+    main{
         display: flex;
-        padding: 10px;
-        flex-direction: row;
-        justify-content: end;
+
+
     }
+    /* primer contenedor del titulo y el parrafo*/
 
-    /* <logo> */
-        #img-logo{
-            display: block;
-            padding: 5px;
-            margin-left: 30px;
-            margin-top: 10px;
-            margin-right: auto;
-            margin-bottom: auto;
-            width: 200px;
-        }
-        #img-logo img{
-            width: 100%;
-        }
-    /* <logo> */
-
-    /* <nav> */
-        #nav-section{
-            margin: auto;
-            width: 80%;
-            font-family:'Times New Roman', Times, serif;
-            font-size: 25px;
-            display: flex;
-            justify-content: end;
-            padding-right: 50px;
-        }
-        #nav-ul{
-            display: flex;
-        }
-        #nav-ul li a{
-        background-color:rgb(197, 147, 54);
-        border: 1px solid rgb(197, 147, 54) ;
-        border-radius: 15px;
-        color:white;
-        text-decoration: none;
-        padding: 10px 50px;
-            display: block;
-        }
-        #nav-ul li a:hover{
-            background-color:rgb(151, 102, 22);
-        }
-        #nav-ul>li {
-            float: left;
-        }
-        #nav-ul li ul{
-            display: none;
-            position: absolute;
-            min-width: 140px;
-        }
-        #nav-ul li:hover>ul{
-            display: block;
-        }
-    /* </nav> */
-
-    #section-descripcion{
+    .section{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 10px;
+
     }
-    #articulo-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 20px;
-    }
-    #articulo-1 h1{
+
+
+  .h1{
         font-size: 40pt;
         margin: 20px;
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -99,11 +111,37 @@ body{
         justify-content: flex-start;
         color: black;
     }
-    #articulo-1 p{
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.div-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+    .p{
         width: 80%;
         margin: 20px 10px;
         padding: 10px;
-        background-color: papayawhip ;
+        background-color: rgba(197, 156, 90, 0.767);
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
@@ -111,19 +149,14 @@ body{
         font-family:  Arial;
         border-radius: 5px;
         font-size: 12pt;
+        
+       
     }
-    #articulo-2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px;
-    }
-    #articulo-2 p{
+    .p1{
         width: 80%;
         margin: 20px 10px;
         padding: 10px;
-        background-color: papayawhip ;
+        background-color: rgba(197, 156, 90, 0.767) ;
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
@@ -131,24 +164,21 @@ body{
         font-family:  Arial;
         border-radius: 5px;
         font-size: 12pt;
+       
     }
-/* </header> */
 
 
-/* <main> */
-    main{
-        display: flex;
-        flex-direction: column;
 
-    }
-    #section-paquetes{
-        width: 100%;
+    .contenedor3{
+        width: 80%;
         padding-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 05%;
     }
-    .articulo-paquete{
+
+    .contenedor4{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -159,42 +189,59 @@ body{
         text-align: center;
         border: 4px solid rgb(176, 123, 48);
     }
-    .articulo-paquete img{
+    .contenedor4 h3{
+        padding: 6px;
+        color: rgb(176, 123, 48);
+        margin-top: 20px;
+    
+    }
+    .contenedor4 p{
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .pblok {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 2px;
+    }
+
+
+    .img1{
         width: 350px;
         height: 200px;
     }
-    .articulo-paquete h3{
-        padding: 6px;
-        color: rgb(176, 123, 48);
-    }
-
-    /* <recomendaciones> */
-        #section-recomendaciones{
-            display: flex;
-            flex-direction: column;
-        }
-        #section-recomendaciones img{
-            width: 100%;
-            height: 100%;
-        }
-        .h3{
-            margin: 10px 0px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 20px;
-        }
-    /* <recomendaciones> */
-
-    aside{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-/* </main> */
 
 
-/* <footer> */
+
+/*recomendaciones*/
+
+.recomen{
+    display: flex;
+    flex-direction: column;
+}
+ .img{
+    width: 100%;
+   height: 400px;
+ }
+
+.h3{
+    margin: 40px 0px;
+    background-color: rgba(159, 107, 61, 0.677);
+    padding: 10px;
+}
+
+/*seccion de aside*/
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+    /* <footer> */
     footer{
         margin-bottom: 0px;
         margin-top: auto;
@@ -220,7 +267,7 @@ body{
     .box-footer a{
         margin-top: 10px;
         margin-bottom: 10px;
-        color: #ffffff;
+        color: white;
         font-weight: 600;
         text-decoration: none;
     }
@@ -273,3 +320,4 @@ body{
         width: 95%;
     }
 /* </footer> */
+
