@@ -1,12 +1,15 @@
 *{
     margin: 0px;
 }
-
+ul, ol{
+    list-style: none;
+}
 body{
     background-color: #f1dda5;
 }
-/* el div que empieza desde el main hasta antes de recomendaciones*/
-#fondo{
+
+/* <header> */
+header{
     width: 100%;
     background-image: url("../imagenes/Huacapucllana/huaca-pullacna.jpg");
     background-position: center center;
@@ -14,20 +17,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-header{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.logo-nav{
+#section-logo-nav{
     display: flex;
     padding: 10px;
     flex-direction: row;
      justify-content: end;
 }
 /* <logo> */
-    .logoHeader{
+    #img-logo{
         display: block;
         padding: 5px;
         margin-left: 30px;
@@ -36,13 +33,13 @@ header{
         margin-bottom: auto;
         width: 200px;
     }
-    .logoHeader img{
+    #img-logo img{
         width: 100%;
     }
 /* <logo> */
 
 /* <nav> */
-.nav-section{
+#nav-section{
     margin: auto;
     width: 80%;
     font-family:'Times New Roman', Times, serif;
@@ -50,16 +47,11 @@ header{
     display: flex;
     justify-content: end;
     padding-right: 50px;
-
 }
-
-ul, ol{
-    list-style: none;
-}
-.nav-partido{
+#nav-ul{
     display: flex;
 }
-.nav-partido li a{
+#nav-ul li a{
    background-color:rgba(197, 147, 54, 0.819);
    border: 1px solid rgba(197, 147, 54, 0.819) ;
    border-radius: 15px;
@@ -68,41 +60,42 @@ ul, ol{
    padding: 10px 50px;
     display: block;
 }
-.nav-partido li a:hover{
+#nav-ul li a:hover{
     background-color:rgba(151, 102, 22, 0.73);
 }
-.nav-partido>li {
+#nav-ul>li {
     float: left;
 }
-.nav-partido li ul{
+#nav-ul li ul{
     display: none;
     position: absolute;
     min-width: 140px;
 }
-.nav-partido li:hover>ul{
+#nav-ul li:hover>ul{
     display: block;
 }
-
 /* </nav> */
 
 
     main{
         display: flex;
-
-
+        flex-direction: column;
     }
-    /* primer contenedor del titulo y el parrafo*/
-
-    .section{
+    #section-descripcion{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 10px;
 
     }
-
-
-  .h1{
+    #articulo-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+    }
+    #articulo-1 h1{
         font-size: 40pt;
         margin: 20px;
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -111,33 +104,7 @@ ul, ol{
         justify-content: flex-start;
         color: black;
     }
-
-.contenedor1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    
-}
-
-.div-p{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contenedor2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    
-}
-
-    .p{
+    #articulo-1 p{
         width: 80%;
         margin: 20px 10px;
         padding: 10px;
@@ -149,10 +116,15 @@ ul, ol{
         font-family:  Arial;
         border-radius: 5px;
         font-size: 12pt;
-        
-       
     }
-    .p1{
+    #articulo-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    #articulo-2 p{
         width: 80%;
         margin: 20px 10px;
         padding: 10px;
@@ -164,12 +136,12 @@ ul, ol{
         font-family:  Arial;
         border-radius: 5px;
         font-size: 12pt;
-       
     }
 
 
 
-    .contenedor3{
+
+    #section-paquetes{
         width: 80%;
         padding-top: 20px;
         display: flex;
@@ -177,8 +149,7 @@ ul, ol{
         justify-content: space-between;
         margin: 05%;
     }
-
-    .contenedor4{
+    .articulo-paquete{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -189,55 +160,41 @@ ul, ol{
         text-align: center;
         border: 4px solid rgb(176, 123, 48);
     }
-    .contenedor4 h3{
+    .articulo-paquete h3{
         padding: 6px;
         color: rgb(176, 123, 48);
         margin-top: 20px;
     
     }
-    .contenedor4 p{
+    .articulo-paquete p{
         margin-bottom: 20px;
         margin-left: 15px;
         margin-right: 15px;
     }
-
-    .pblok {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        margin-left: 2px;
-    }
-
-
-    .img1{
+    .articulo-paquete img{
         width: 350px;
         height: 200px;
     }
 
 
-
-/*recomendaciones*/
-
-.recomen{
+#section-recomendaciones{
     display: flex;
     flex-direction: column;
 }
- .img{
+#section-recomendaciones img{
     width: 100%;
-   height: 400px;
- }
-
+    height: auto;
+}
 .h3{
     margin: 40px 0px;
     background-color: rgba(159, 107, 61, 0.677);
     padding: 10px;
 }
 
-/*seccion de aside*/
 aside{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 
