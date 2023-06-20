@@ -1,3 +1,6 @@
+
+//Aumentar tamaño de texto
+
 function aumentarTexto(e) {
     e.style.color = "black";
     e.style.fontSize = "16px";
@@ -13,6 +16,7 @@ function aumentarTexto(e) {
     element.setAttribute("onmouseout", "reducirTexto(this)");
   }
   
+//Cambio de imagenes en los paquetes
 
   const img1 = document.getElementById("img1");
   const img2 = document.getElementById("img2");
@@ -56,4 +60,17 @@ img3.addEventListener("mouseout", function() {
   volverImagenOriginal(img3, "../imagenes/Kuelap/paqueteC1.jpg");
 });
   
-  
+//Cambio de imagenes de recomendaciones
+ 
+ var lista=new Array("../imagenes/Kuelap/banner1.jpg","../imagenes/Kuelap/banner2.jpg","../imagenes/Kuelap/banner3.jpg","../imagenes/Kuelap/banner4.jpg");
+var c=0;
+
+function carrusel(){
+    var img=document.getElementById("img");
+    c++;
+    if(c>lista.length-1) c=0;
+    img.src=lista[c];
+
+    setTimeout(carrusel,1000);
+}
+document.body.setAttribute("onload", "carrusel()");

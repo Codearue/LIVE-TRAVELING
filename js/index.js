@@ -50,4 +50,39 @@ var meses=new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Juli
             }
         }
     }
-    document.body.setAttribute("onload","calendario()");
+
+    //Cambio de imagenes de recomendaciones
+  
+var lista=new Array("../imagenes/Huacapucllana/paqueteA1.jpg","../imagenes/CristodelPacifico/paqueteA1.jpg","../imagenes/MachuPicchu/paqueteA2.jpg","../imagenes/Montaña7colores/paqueteA6.jpg","../imagenes/Kuelap/paqueteC2.jpg","../imagenes/ParqueNacionalManu/paqueteA1.jpg");
+var c=0;
+
+function carrusel(){
+    var img=document.getElementById("img");
+    c++;
+    if(c>lista.length-1) c=0;
+    img.src=lista[c];
+
+    setTimeout(carrusel,1000);
+}
+
+
+//Aumentar tamaño de texto
+
+function aumentarTexto(e) {
+    e.style.color = "black";
+    e.style.fontSize = "18px";
+  }
+  
+  function reducirTexto(e) {
+    e.style.color = "black";
+    e.style.fontSize = "14px";
+  }
+  
+  for (element of document.getElementsByClassName("articulo-destino")) {
+    element.setAttribute("onmouseover", "aumentarTexto(this)");
+    element.setAttribute("onmouseout", "reducirTexto(this)");
+  }
+  calendario()
+  carrusel()
+
+  

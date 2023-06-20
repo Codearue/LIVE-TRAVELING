@@ -17,7 +17,7 @@ ul, ol{
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 550px;
+        height: 850px;
     }
     #section-logo-nav{
         display: flex;
@@ -210,6 +210,93 @@ ul, ol{
         width: 95%;
     }
 /* </footer> */
+
+/*  RELOJ   */
+
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.clean{
+    height: auto;
+    width: auto;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #05263c, #000d1a);
+    z-index: 1;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.clock::before{
+    content:"";
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #19ad19,#370e97);
+    box-shadow:  0 0 15px 15px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+.number{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    text-align: center;
+    inset: 10px;
+    font-size: 20px;
+    color: #28d6f5;
+    text-shadow:  0 0 12px #ee00ff;
+} 
+.number b{
+    transform: rotate(calc(-30deg * var(--n)));
+    display: inline-block;
+}
+
+.center-dot{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #19ad19;
+    border: 6px solid #ee00ff;
+    border-radius: 50%;
+}
+.hour-hand, .minute-hand, .second-hand{
+    --rotate:0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%) rotate(calc(var(--rotate)*1deg));
+    transform-origin: bottom;
+    border-radius: 30px 30px 0 0;
+}
+
+.hour-hand{
+    width: 12px;
+    height: 70px;
+    
+    background: linear-gradient(#00d9ff, #ee00ff);
+}
+
+.minute-hand{
+    width: 9px;
+    height: 90px;
+    background: linear-gradient(#00d9ff, #ee00ff);
+}
+
+.second-hand{
+    width: 6px;
+    height: 130px;
+    background: linear-gradient(#00d9ff, #ee00ff);
+}
 
 /* <vercion-modificada> */
 @media (max-width: 915px) {

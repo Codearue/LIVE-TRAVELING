@@ -52,3 +52,17 @@ img3.addEventListener("mouseout", function() {
   volverImagenOriginal(img3, "../imagenes/MachuPicchu/paqueteC1.jpg");
 });
   
+//Cambio de imagenes de recomendaciones
+  
+var lista=new Array("../imagenes/MachuPicchu/banner1.jpg","../imagenes/MachuPicchu/banner2.jpg","../imagenes/MachuPicchu/banner3.jpg","../imagenes/MachuPicchu/banner4.jpg");
+var c=0;
+
+function carrusel(){
+    var img=document.getElementById("img");
+    c++;
+    if(c>lista.length-1) c=0;
+    img.src=lista[c];
+
+    setTimeout(carrusel,1000);
+}
+document.body.setAttribute("onload", "carrusel()");  

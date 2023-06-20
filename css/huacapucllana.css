@@ -158,19 +158,35 @@ body{
         }
     /* </paquetes> */
 
-    #section-recomendaciones{
-        width: 100%;
+    .section-recomendaciones{
+        display: flex;
+        flex-direction: column;
     
     }
-    #section-recomendaciones img{
+    .section-recomendaciones img{
         width: 100%;
-        height: 400px;
-       
-    }
+        height: 350px;
+     }
     .h3{
         margin: 40px 0px;
         background-color: rgba(159, 107, 61, 0.677);
         padding: 10px;
+    }
+    #pf, #ph {
+        margin-top: 20px;
+        width: 50%;
+        height: 20px;
+        float: left;
+        background-color: rgba(159, 107, 61, 0.677);
+    }
+     #dh h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-recomendaciones a{
+        color: black;
+        text-decoration: none;
     }
     aside{
         display: flex;
