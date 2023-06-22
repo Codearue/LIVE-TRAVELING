@@ -66,6 +66,23 @@ function carrusel(){
 }
 
 
+function cambio(e){
+    var img=e.getAttribute("data-ar");
+    e.src="./imagenes/"+"globales/"+img+"1"+".jpg";
+}
+
+function regresa(e){
+    var img=e.getAttribute("data-ar");
+    e.src="./imagenes/"+"globales/"+img+".jpg";
+}
+
+for( var i=0; i<document.getElementsByClassName("social2").length; i++)
+{
+    document.getElementsByClassName("social2")[i].setAttribute("onmouseover","cambio(this)");
+    document.getElementsByClassName("social2")[i].setAttribute("onmouseout","regresa(this)");
+}
+
+
 //Aumentar tamaño de texto
 
 function aumentarTexto(e) {
