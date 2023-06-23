@@ -1,22 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document
-      .querySelector("input[name='usuario']")
-      .addEventListener("keypress", function(event) {
-        var ascii = event.keyCode || event.which;
-        if (!(ascii >= 65 && ascii <= 90) && !(ascii >= 97 && ascii <= 122)) {
-          event.preventDefault();
-        }
-      });
 
-    document
-      .querySelector("input[name='clave']")
-      .addEventListener("keypress", function(event) {
-        var ascii = event.keyCode || event.which;
-        if (!(ascii >= 65 && ascii <= 90) && !(ascii >= 97 && ascii <= 122)) {
-          event.preventDefault();
-        }
-      });
-  });
 
   function cargar(frm) {
     const usuarioValue = frm.usuario.value;
@@ -54,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Clave:", claveValue);
     console.log("Email:", emailValue);
 
-    
+
   }
 
 
