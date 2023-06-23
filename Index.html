@@ -18,7 +18,7 @@
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="">Destinos</a>
                             <ul>
-                                <li><a href="./paginas/Huacapullana.html">Huaca Pucllana</a></li>
+                                <li><a href="./paginas/Huacapucllana.html">Huaca Pucllana</a></li>
                                 <li> <a href="./paginas/CristoPacifico.html">Cristo del Pacífico</a></li>
                                 <li> <a href="./paginas/Machupichu.html">Machu Picchu</a></li>
                                 <li> <a href="./paginas/Montaña7col.html">Montaña de los 7 colores</a></li>
@@ -32,8 +32,25 @@
                 </nav>
             </section>
             <section id="section-aside">
-                <aside id="calendario">
-                    <h1>Elija su fecha:</h1>        
+                <aside id="login">
+                    <form class="login" name="frmlogin" onsubmit="login(this)" method="post">
+                        <h1>login:</h1>  
+                        <div class="inputs-generales">
+                            <div id="usuario">
+                                <h4 class="h4For">Usuario: </h4>
+                                <input class="inputFor" type="text" name="usuario" placeholder="Usuario">
+                            </div> 
+                            <div id="clave">
+                                <h4 class="h4For">Clave: </h4>
+                                <div id="clave-input">
+                                    <input class="inputFor" type="password" name="clave" placeholder="Clave">
+                                </div>
+                            </div>
+                            <div class="input-button" >
+                                <input type="submit" value="INGRESAR">
+                            </div> 
+                        </div> 
+                    </form>     
                 </aside>
             </section>     
         </header>
@@ -48,7 +65,7 @@
                 <article class="articulo-destino">
                     <h3>Costa</h3>
                     <p>La costa peruana es una franja de tierra que se extiende a lo largo del océano Pacífico. Es una zona de gran diversidad geográfica y cultural, donde se encuentran desde desiertos y valles hasta playas y ciudades. La costa alberga a más de la mitad de la población del país y es el centro económico y político del Perú.</p>
-                    <br>
+                    <br>  
                     <img src="./imagenes/index/Costa.jpg" alt="Imagen no encontrada">
                 </article>
                 <article class="articulo-destino">
@@ -57,11 +74,11 @@
                     <br>
                     <img src="./imagenes/index/Sierra.jpg" alt="Imagen no encontrada">
                 </article>
-                <article class="articulo-destino">
-                    <h3>Selva</h3>
+                <article class="articulo-destino">  
+                    <a href="./paginas/Selva.html"><h3>Selva</h3></a>
                     <p>La selva peruana es la región amazónica que ocupa más del 60% del territorio nacional. Es una zona de exuberante biodiversidad y fascinante cultura, donde conviven pueblos indígenas y mestizos. La selva invita al turista a explorar sus ríos, lagos, cascadas, reservas naturales y parques nacionales, así como a disfrutar de su gastronomía y su folclore.</p>
                     <br>
-                    <img src="./imagenes/index/Selva.jpg" alt="Imagen no encontrada">
+                    <img src="./imagenes/index/Selva.jpg" alt="Imagen no encontrada">      
                 </article>
             </section>    
         </main>
@@ -128,4 +145,4 @@
     </body>
 </html>
 <script src="./js/index.js"></script>
-<script src="./js/global.js"></script>
+<script src="./js/efectoLogo.js"></script>

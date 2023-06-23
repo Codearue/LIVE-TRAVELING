@@ -31,6 +31,12 @@
                     </ul>       
                 </nav> 
             </section>
+            <section id="section-aside">
+                <aside id="calendario">
+                    <h1 id="h1Calendario"></h1> 
+                    <h1 id="mes"></h1>       
+                </aside>
+            </section> 
         </header>
         <hr> 
         <main>  
@@ -40,33 +46,33 @@
                     <div id="formulario">
                         <div id="usuario" class="texto">
                             <h4>Usuario: </h4>
-                            <input type="text" placeholder="Usuario">
+                            <input type="text" name="usuario" placeholder="Usuario">
                         </div>  
                         <div id="clave">
                             <h4>Clave: </h4>
                             <div id="clave-input">
-                                <input type="password" placeholder="Clave">
-                                <input type="password" placeholder="Confirmar clave">
+                                <input type="password" name="clave" placeholder="Clave">
+                                <input type="password" name="confirmarclave" placeholder="Confirmar clave">
                             </div>
                         </div>      
                         <div id="gmail" class="texto">
                             <h4>Gmail: </h4>
-                            <input type="email" placeholder="Correo Electronico">
+                            <input type="email" name="email" placeholder="Correo Electronico">
                         </div>
                         <div id="destinos">
                             <h4>Destino: </h4>
                             <div id="destinos-imput"> 
-                                <input type="checkbox">Huaca Pucllana
+                                <input type="radio" name="destino">Huaca Pucllana
                                 <br>
-                                <input type="checkbox">Cristo del Pasifico
+                                <input type="radio" name="destino">Cristo del Pasifico
                                 <br>
-                                <input type="checkbox">Machu Picchu
+                                <input type="radio" name="destino">Machu Picchu
                                 <br>
-                                <input type="checkbox">Montaña de los 7 colores
+                                <input type="radio" name="destino">Montaña de los 7 colores
                                 <br>
-                                <input type="checkbox">Kuelap
+                                <input type="radio" name="destino">Kuelap
                                 <br>
-                                <input type="checkbox">Parque Nacional de Manu
+                                <input type="radio" name="destino">Parque Nacional de Manu
                             </div>
                         </div>
                         <div class="fecha">
@@ -148,3 +154,5 @@
     </body>
 </html>
 <script src="../js/global.js"></script>
+<script src="../js/efectoLogo.js"></script>
+<script src="../js/formularioRegistro.js"></script>

@@ -1,31 +1,28 @@
-body{
-    background-color: rgb(237, 210, 104);
-    height: auto;
+*{
+    margin: 0px;
 }
 ul, ol{
     list-style: none;
 }
-* {
-    padding: 0px;;
-    margin: 0px;
+body{
+    background-color: #f1dda5;
 }
 
 /* <header> */
     header{
         width: 100%;
-        height: 580px;
-        background-image: url("../imagenes/registro/fondo-registro.jpg");
+        height: auto;
+        background-image: url("../imagenes/index/Selva.jpg");
         background-position: center;
         background-attachment: fixed;
-        background-size: cover;
         background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     #section-logo-nav{
         display: flex;
-        width: 100%;
         justify-content: space-between;
         height: auto;
     }
@@ -41,8 +38,8 @@ ul, ol{
             height: 100%;
         }
     /* <logo> */
-    
-   /* <nav> */
+
+    /* <nav> */
         #nav-section{
             width: calc(100% - 200px);
             margin-top: 50px;    
@@ -56,16 +53,16 @@ ul, ol{
             display: flex;
         }
         #nav-ul li a{
-            background-color:rgba(205, 136, 40, 0.826);
-            border: 1px solid rgba(205, 136, 40, 0.826) ;
-            border-radius: 15px;
-            color:white;
-            text-decoration: none;
-            padding: 10px 50px;
+        background-color:rgba(197, 147, 54, 0.819);
+        border: 1px solid rgba(197, 147, 54, 0.819) ;
+        border-radius: 15px;
+        color:white;
+        text-decoration: none;
+        padding: 10px 50px;
             display: block;
         }
         #nav-ul li a:hover{
-            background-color:rgba(117, 74, 5, 0.564);
+            background-color:rgba(151, 102, 22, 0.73);
         }
         #nav-ul>li {
             float: left;
@@ -80,110 +77,93 @@ ul, ol{
         }
     /* </nav> */
 
-    /* <aside> */
-        #section-aside{
-            display: flex;
-            justify-content: left;
-            padding-bottom: 30px;
-            padding-left: 60px;
-            padding-top: 60px;
-        }
-        #calendario{
-            background-color: rgba(205, 136, 40, 0.876);
-            border-radius: 20px;
-            height: auto;
-            width: auto;
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-       
-        #h1Calendario{
-            margin-bottom: 18px;
-            font-size: 20px;
-            margin-bottom: 2px;
-        }
-        #mes{
-            margin-top: 2px;
-            margin-bottom: 20px;
-        }
-    /* </aside> */
-    
+    #section-descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    #articuloTitulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .articulo-descripcion{
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .articulo-descripcion h1{
+        font-size: 40pt;
+        margin: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: white;
+    }
+    .articulo-descripcion p{
+        width: 80%;
+        padding: 15px;
+        background-color: rgba(143, 217, 121, 0.561) ;
+        font-family: Arial;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 14pt;
+    }
+
 /* </header> */
 
 
 /* <main> */
-    /* <registro> */
-        #registro{
-            display: flex;
-            justify-content: center;
-            padding: 30px;
-        }
-        .registro{
-            display: block;
-            width: 70%;
-            height: auto;
-            padding: 10px;
-            background-color: white;
-            border-radius: 15px;
-        }
-        .registro h1{
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 15px;
-            font-size: 35px;
-        }
-        #formulario{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        #formulario h4{
-            margin: 0px;
-            margin-bottom: 10px;
-        }
-        .texto{
-            display: flex;
-            justify-content: space-between;
-            width: 60%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .texto input{
-            width: 75%;
-        }
-        #clave{
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-        }
-        #destinos{
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .fecha{
-            width: 70%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .fecha input{
-            width: 100%;
-        }
-        #input-button input{  
-            padding: 10px 40px;
-            margin-top: 10px;
-            font-size: 15px;
-            width: 100%;
-            background-color: rgba(152, 96, 6, 0.819);
-            border-radius: 8px;
-            color: white;
-        }
-    /* </registro> */
+main{
+    height: auto;
+    padding-bottom: 30px;
+}
+#carrucel img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    align-items: center;
+    background-size: cover;
+}
+.titulo{ 
+    background-color: rgba(159, 62, 61, 0.677);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+#section-destinos{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+.articulo-destino{ 
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    width: 28%; 
+}
+.articulo-destino h3{
+    text-align: center;
+    margin: 10px;
+    font-size: 28px;
+}
+.articulo-destino img{ 
+    width: auto; 
+    height: 180px; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+   
 /* </main> */
 
 
@@ -213,7 +193,7 @@ ul, ol{
     .box-footer a{
         margin-top: 10px;
         margin-bottom: 10px;
-        color: #ffffff;
+        color: white;
         font-weight: 600;
         text-decoration: none;
     }
@@ -267,7 +247,6 @@ ul, ol{
     }
 /* </footer> */
 
-
 /* <vercion-modificada> */
 @media (max-width: 915px) {
 
@@ -292,6 +271,35 @@ ul, ol{
     #nav-ul li a{
         padding: 10px 35px;
     }
+    #section-descripcion{
+        text-align: center;
+    }
+    #articuloTitulo{
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .articulo-descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin: 10px;
+        margin-bottom: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .articulo-descripcion h1{
+        margin-bottom: 20px;
+    }
+    .articulo-descripcion p{
+        width: 90%;            
+    }
+    aside{
+        flex-direction: column;
+    }
 }
 @media (min-width: 915px) and (max-width: 999px) {
 
@@ -311,6 +319,22 @@ ul, ol{
     }
     #nav-ul li a{
         padding: 10px 50px;
+    }
+    #articuloTitulo{
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .articulo-descripcion{
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .articulo-descripcion p{
+        width: 80%;      
+    }
+    aside{
+        flex-direction: row;
     }
 }
 /* <vercion-inicial> */
@@ -332,5 +356,21 @@ ul, ol{
     }
     #nav-ul li a{
         padding: 10px 50px;
+    }
+    #articuloTitulo{
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .articulo-descripcion{
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .articulo-descripcion p{
+        width: 80%;      
+    }
+    aside{
+        flex-direction: row;
     }
 }
