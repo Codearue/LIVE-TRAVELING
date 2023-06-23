@@ -1,43 +1,50 @@
-
-
-  function cargar(frm) {
-    const usuarioValue = frm.usuario.value;
-    const claveValue = frm.clave.value;
-    const emailValue = frm.email.value;
-
-    var test = /^[a-zA-Z]+$/;
-    if (!test.test(usuarioValue)) {
+document.querySelector("input[name='usuario']").addEventListener("keypress", function(event){
+  var ascii=event.keyCode || event.which; 
+  if(!(ascii>=65 && ascii<=90) && !(ascii>=97) && (ascii<=122)){
       window.event.preventDefault();
-      alert("Ingrese el usuario");
       return;
-    }
+  }
+});
 
-    if (claveValue.length < 6) {
-        window.event.preventDefault();
-      alert("La clave tiene que ser más de 6 caracteres");
+document.querySelector("input[name='clave']").addEventListener("keypress", function(event){
+  var ascii=event.keyCode || event.which;
+  if(!(ascii>=48 && ascii<=57)){
+      window.event.preventDefault();
       return;
-    }
+  }
+});
 
-    var test2 = /^[a-zA-Z0-9]{6,10}$/;
-    if (test2.test(claveValue)) {
-        window.event.preventDefault();
-      alert("Ingrese una clave");
+
+function nuevo(frm){
+  let cadena=/^\s{6,10}$/;
+  if(!cadena.test(frm.clave.value)){
+      window.event.preventDefault();
+      alert("Ingrese clave cumpliendo los parametros"); return;
+  }
+
+  let test=/^\s{3,12}$/;
+  if(!test.test(frm.usuario.value)){
+      window.event.preventDefault();
+      alert("Ingrese el nombre"); 
       return;
-    }
+  }
+  
+  if (frm.clave.value !== frm.confirmarclave.value) {
+    window.event.preventDefault();
+    alert("Ingrese la misma clave");
+    return;
+  }
 
-    var test3 = /^([a-zA-Z0-9])+[@]([a-z])+[.][a-z]{2,3}$/;
-    if (!test3.test(emailValue)) {
-        window.event.preventDefault();
+ 
+  let test2=/^([a-zA-Z0-9])+[@]([a-z])+[.][a-z]{2,3}$/ 
+  if(!test2.test(frm.email.value)){
+      window.event.preventDefault();
       alert("Formato de correo incorrecto");
       return;
-    }
-
-    console.log("Usuario:", usuarioValue);
-    console.log("Clave:", claveValue);
-    console.log("Email:", emailValue);
-
-
   }
+
+
+}
 
 
 

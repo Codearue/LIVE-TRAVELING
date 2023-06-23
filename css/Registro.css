@@ -269,7 +269,32 @@ ul, ol{
 
 
 /* <vercion-modificada> */
-@media (max-width: 915px) {
+@media (max-width: 680px) {
+
+    #section-logo-nav{
+        flex-direction: column;
+    }
+    .logoHeader{
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #nav-section{      
+        justify-content: center;
+        width: 80%;
+        margin-top: 10px;    
+        margin-right: 0px;
+        font-size: 15px;
+    }
+    #nav-ul{
+        width: 100%;
+        justify-content: center;
+    }
+    #nav-ul li a{
+        padding: 10px 25px;
+    }
+}
+@media (min-width: 680px) and (max-width: 915px) {
 
     #section-logo-nav{
         flex-direction: column;
@@ -284,6 +309,7 @@ ul, ol{
         width: 100%;
         margin-top: 10px;    
         margin-right: 0px;
+        font-size: 20px;
     }
     #nav-ul{
         width: 100%;
@@ -308,6 +334,7 @@ ul, ol{
         margin-top: 50px;    
         margin-right: 20px;
         justify-content: flex-end;
+        font-size: 25px;
     }
     #nav-ul li a{
         padding: 10px 50px;
@@ -329,6 +356,7 @@ ul, ol{
         margin-top: 50px;    
         margin-right: 20px;
         justify-content: flex-end;
+        font-size: 25px;
     }
     #nav-ul li a{
         padding: 10px 50px;
