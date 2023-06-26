@@ -27,7 +27,7 @@ function login(frm){
 
     //Cambio de imagenes de recomendaciones
   
-var lista=new Array("./imagenes/Huacapucllana/paqueteA1.jpg","./imagenes/CristodelPacifico/paqueteA1.jpg","./imagenes/MachuPicchu/paqueteA2.jpg","./imagenes/Montaña7colores/paqueteA6.jpg","./imagenes/Kuelap/paqueteC2.jpg","./imagenes/ParqueNacionalManu/paqueteA1.jpg");
+var lista=new Array("./imagenes/Huacapucllana/paqueteA1.jpg","./imagenes/CristodelPacifico/paqueteA1.jpg","./imagenes/MachuPicchu/paqueteA2.jpg","./imagenes/Montana7colores/paqueteA6.jpg","./imagenes/Kuelap/paqueteC2.jpg","./imagenes/ParqueNacionalManu/paqueteA1.jpg");
 var c=0;
 
 function carrusel(){

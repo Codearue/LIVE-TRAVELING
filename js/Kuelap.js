@@ -73,4 +73,4 @@ function carrusel(){
 
     setTimeout(carrusel,1000);
 }
-document.body.setAttribute("onload", "carrusel()");
+carrusel()

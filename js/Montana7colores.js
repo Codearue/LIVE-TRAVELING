@@ -35,34 +35,34 @@ function volverImagenOriginal(img, imagenOriginal) {
 
 
 img1.addEventListener("mouseover", function() {
-  cambiarImagen(img1, "../imagenes/Montaña7colores/paqueteA5.jpg");
+  cambiarImagen(img1, "../imagenes/Montana7colores/paqueteA5.jpg");
 });
 
 img1.addEventListener("mouseout", function() {
-  volverImagenOriginal(img1, "../imagenes/Montaña7colores/paqueteA1.jpg");
+  volverImagenOriginal(img1, "../imagenes/Montana7colores/paqueteA1.jpg");
 });
 
 
 img2.addEventListener("mouseover", function() {
-  cambiarImagen(img2, "../imagenes/Montaña7colores/paqueteA4.jpg");
+  cambiarImagen(img2, "../imagenes/Montana7colores/paqueteA4.jpg");
 });
 
 img2.addEventListener("mouseout", function() {
-  volverImagenOriginal(img2, "../imagenes/Montaña7colores/paqueteA2.jpg");
+  volverImagenOriginal(img2, "../imagenes/Montana7colores/paqueteA2.jpg");
 });
 
 
 img3.addEventListener("mouseover", function() {
-  cambiarImagen(img3, "../imagenes/Montaña7colores/paqueteA6.jpg");
+  cambiarImagen(img3, "../imagenes/Montana7colores/paqueteA6.jpg");
 });
 
 img3.addEventListener("mouseout", function() {
-  volverImagenOriginal(img3, "../imagenes/Montaña7colores/paqueteA3.jpg");
+  volverImagenOriginal(img3, "../imagenes/Montana7colores/paqueteA3.jpg");
 });
 
 //Cambio de imagenes de recomendaciones
   
-var lista=new Array("../imagenes/Montaña7colores/banner1.jpg","../imagenes/Montaña7colores/banner2.jpg","../imagenes/Montaña7colores/banner3.jpg","../imagenes/Montaña7colores/banner4.jpg");
+var lista=new Array("../imagenes/Montana7colores/banner1.jpg","../imagenes/Montana7colores/banner2.jpg","../imagenes/Montana7colores/banner3.jpg","../imagenes/Montana7colores/banner4.jpg");
 var c=0;
 
 function carrusel(){
@@ -73,4 +73,4 @@ function carrusel(){
 
     setTimeout(carrusel,1000);
 }
-document.body.setAttribute("onload", "carrusel()");  
+carrusel()  

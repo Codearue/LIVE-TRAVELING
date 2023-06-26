@@ -24,6 +24,7 @@ function dia(){
      if(s<10){s='0'+s;}
     
      document.getElementById("ph").innerHTML="Hora : "+h+":"+m+":"+s;
+     setTimeout(hora, 1000);
      }
     
     document.body.setAttribute("onload","setInterval(cambiarColor,1000), dia(), hora()");
